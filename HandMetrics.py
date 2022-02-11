@@ -29,3 +29,19 @@ class HandMetrics:
             self.knuckle_orthogonal.draw_line(self.image)
         if self.backhand_orthogonal is not None:
             self.backhand_orthogonal.draw_line(self.image)
+
+    def find_edges(self):
+        if self.index is not None:
+            self.index.find_edges(self.image)
+        if self.middle is not None:
+            self.middle.find_edges(self.image)
+        if self.ring is not None:
+            self.ring.find_edges(self.image)
+        if self.pinky is not None:
+            self.pinky.find_edges(self.image)
+        if self.thumb_orthogonal is not None:
+            self.thumb_orthogonal.find_edges(self.image)
+        if self.knuckle_orthogonal is not None:
+            self.knuckle_orthogonal.find_edges(self.image)
+        if self.backhand_orthogonal is not None:
+            self.backhand_orthogonal.find_edges(self.image)
